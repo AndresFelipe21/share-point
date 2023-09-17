@@ -1,0 +1,21 @@
+*{
+    font-family: 'Poppins';
+}
+
+.descripcion{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+}
+
+.col-4 {
+    margin: 100px;
+}
+
+.col-12{
+    text-align: center;
+}
