@@ -1,21 +1,19 @@
-*{
-    font-family: 'Poppins';
-}
-
 .descripcion{
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
 }
 
-.container {
-    align-items: center;
+body {
+    background-image: url("../imagenes/FondoRegistro.png");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
 
-.col-4 {
-    margin: 100px;
-}
 
-.col-12{
-    text-align: center;
-}
+
+
