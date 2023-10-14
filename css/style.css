@@ -8,45 +8,11 @@ body {
     font-size: 20px;
 }
 
-a{
-    color: black;
-}
-
 .titulo{
     color: white;
     text-align: center;
 }
 
-.container {
-    width: 100%;
-    padding: 20px;
-}
-
-section {
-    padding: 20px; 
-}
-
-img {
-    border-radius: 15px;
-    border: 2px solid black;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-text {
-    font-size: 36px;
-    position: absolute;
-    top: 80%; 
-    left: 5%; 
-}
-
-.image-text-semestre {
-    position: absolute;
-    top: 85%; 
-    left: 30%;
-}
 
 
 
