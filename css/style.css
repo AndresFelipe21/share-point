@@ -12,5 +12,25 @@ body {
     text-align: center;
 }
 
+.galeria{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5 ease;
+}
 
+.galeria img:hover{
+    cursor:crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
