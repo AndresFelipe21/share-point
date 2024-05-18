@@ -9,6 +9,7 @@
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="../css/semestre1.css">
     <title>semestre 5</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">
@@ -27,8 +29,8 @@
                 <img src="../imagenes/icono.jpg" alt="icono" width="50px" height="50px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,37 +55,88 @@
                 </div>
             </div>
             <!--contenedor de los documentos-->
+
+
             <div class="row">
                 <div class="col">
-                    <div class="card text-bg-dark">
-                        <!--Carrusel de las imagenes-->
-                        <div id="carouselExample" class="carousel slide" >
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="../imagenes/semestre5/Asignación.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="../imagenes/semestre5/Asignacion1.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="../imagenes/semestre5/calidad.png" class="d-block w-100" alt="...">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h1 class="card-title">Implementación de framework</h1>
+                            <p class="card-text">Para la implementación del proyecto se tomo la decisión del manejo del
+                                framework Java Server Faces por las siguientes cualidades:
+                            </p>
+                            <ul style="list-style: none;">
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Mejor manejo en lenguaja tipo java <i
+                                        class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Manejo de POO (Programación orientda a
+                                    objetos) <i class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Facil manejo de entidades de la base
+                                    de datos <i class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Manejo de eventos en la página <i
+                                        class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Definir un esquema de navegación <i
+                                        class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Es fácil de comprender <i
+                                        class="bi bi-arrow-left-circle-fill"></i></li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> Accesible <i
+                                        class="bi bi-arrow-left-circle-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contenido MVC -->
+            <div class="card mt-3">
+                <div class="col col-md-8 translate-middle-x">
+                    <img src="../imagenes/semestre5/mvc.jpeg" class="card-img-top start-50" style="margin-left: auto;margin-right: auto;">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title mb-3">JAVA Server Faces - MVC (arquitectura)</h5>
+                        <!-- despliegue contenido -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  <h3>Configuración base de datos</h3>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h3>Driver</h3>
+                                    <p>En este paso se empieza realizando la conexión de la base de datos desde la herramienta de Netbeans</p>
+                                    <img src="../imagenes/semestre5/pasosBD/paso1.png" alt="">
+                                    <p>Se crea un nuevo Driver previamente descargado en este caso se usa el destinado a MySQL</p>
+                                    <img src="../imagenes/semestre5/pasosBD/paso2.png" alt="">
+                                    <p>Ahora colocar las credenciales las cuales se tienen acceso a la base de datos, en este caso es root</p>
+                                    <img src="../imagenes/semestre5/pasosBD/paso3.png" alt="">
+                                    <p>En el apartado JDBC se colocar el HOST y el puerto donde está conectado, con el nombre de la base de datos más el parámetro “useSSL=false” y por último se prueba la conexión “TEST CONNECTION”.</p>
+                                    <img src="../imagenes/semestre5/pasosBD/paso4.png" alt="">
+                                </div>
                               </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
                           </div>
-                        <!--texto de la carta-->
-                        <div class="card-img-overlay">
-                          <h1 class="card-title">Actualización de documentación</h1>
-                          <p class="card-text">Docu</p>
-                        </div>
-                      </div>
+
                 </div>
             </div>
         </div>
@@ -92,4 +145,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
