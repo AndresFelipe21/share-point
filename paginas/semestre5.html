@@ -10,12 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- letra -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald:wght@300;400&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/semestre1.css">
@@ -87,56 +81,260 @@
             </div>
 
             <!-- contenido MVC -->
-            <div class="card mt-3">
-                <div class="col col-md-8 translate-middle-x">
-                    <img src="../imagenes/semestre5/mvc.jpeg" class="card-img-top start-50" style="margin-left: auto;margin-right: auto;">
+            <div class="card mt-3 carta">
+                <div class="d-flex justify-content-center">
+                    <img src="../imagenes/semestre5/mvc.jpeg" class="rounded mx-auto d-block img-fluid">
                 </div>
                 <div class="card-body">
                     <h2 class="card-title mb-3">JAVA Server Faces - MVC (arquitectura)</h5>
                         <!-- despliegue contenido -->
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush acordeon" id="accordionFlushExample">
+                            <!-- otro elemento -->
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <h3>Configuración base de datos</h3>
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <h3>Driver</h3>
-                                    <p>En este paso se empieza realizando la conexión de la base de datos desde la herramienta de Netbeans</p>
-                                    <img src="../imagenes/semestre5/pasosBD/paso1.png" alt="">
-                                    <p>Se crea un nuevo Driver previamente descargado en este caso se usa el destinado a MySQL</p>
-                                    <img src="../imagenes/semestre5/pasosBD/paso2.png" alt="">
-                                    <p>Ahora colocar las credenciales las cuales se tienen acceso a la base de datos, en este caso es root</p>
-                                    <img src="../imagenes/semestre5/pasosBD/paso3.png" alt="">
-                                    <p>En el apartado JDBC se colocar el HOST y el puerto donde está conectado, con el nombre de la base de datos más el parámetro “useSSL=false” y por último se prueba la conexión “TEST CONNECTION”.</p>
-                                    <img src="../imagenes/semestre5/pasosBD/paso4.png" alt="">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <h3>Configuración base de datos</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <h3>Driver</h3>
+                                        <p>En este paso se empieza realizando la conexión de la base de datos desde la
+                                            herramienta de Netbeans</p>
+                                        <img src="../imagenes/semestre5/pasosBD/paso1.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Se crea un nuevo Driver previamente descargado en este caso se usa el
+                                            destinado a MySQL</p>
+                                        <img src="../imagenes/semestre5/pasosBD/paso2.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Ahora colocar las credenciales las cuales se tienen acceso a la base de
+                                            datos, en este caso es root</p>
+                                        <img src="../imagenes/semestre5/pasosBD/paso3.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>En el apartado JDBC se colocar el HOST y el puerto donde está conectado, con
+                                            el nombre de la base de datos más el parámetro “useSSL=false” y por último
+                                            se prueba la conexión “TEST CONNECTION”.</p>
+                                        <img src="../imagenes/semestre5/pasosBD/paso4.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>En el siguiente apartado se cambia el input de la conexión con el nombre de
+                                            la base de datos en este caso TCE</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosBD/paso5.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosBD/paso5.1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                        <p>Se completa la conexión:</p>
+                                        <img src="../imagenes/semestre5/pasosBD/paso6.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                    </div>
                                 </div>
-                              </div>
                             </div>
+                            <!-- otro elemento -->
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                  Accordion Item #2
-                                </button>
-                              </h2>
-                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                              </div>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <h3>Creación de proyecto con JSF</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>En este apartado se crea un proyecto tipo Maven, se debe verificar que este
+                                            usando el server Glass Fish, use el JDK 1.8 y por último se agrega el
+                                            framework al proyecto, primer paso ir a las propiedades del proyecto</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosProyecto/paso1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosProyecto/paso1.1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                        <p>Para agregar el framework se selecciona en "Add" y escogemos "JavaServer
+                                            Faces".</p>
+                                        <img src="../imagenes/semestre5/pasosProyecto/paso2.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <div class="row m-2">
+                                            <div class="col">
+                                                <p>En el apartado de “Libraries” se selecciona “Server Library” y en
+                                                    “Configuration” se borra todo y se coloca “*.xhtml”:</p>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <img src="../imagenes/semestre5/pasosProyecto/paso3.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- otro elemento -->
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                  Accordion Item #3
-                                </button>
-                              </h2>
-                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                              </div>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <h3>Configuración GlassFish</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>En el apartado de “Services” y “Server” hacemos clic derecho agregar
+                                            servidor, se escoge GlassFish</p>
+                                        <img src="../imagenes/semestre5/pasosGlassFish/paso1.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Luego se escoge la versión de este servidor a descargar, se seleccionar
+                                            “Downloand” para que descargue las dependencias. Luego nombre del dominio y
+                                            se termina</p>
+                                        <img src="../imagenes/semestre5/pasosGlassFish/paso2.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Se debe realizar un ajuste al archivo del GlassFish por ello se debe ingresar
+                                            en la carpeta WEB, dentro del archivo de “glassfish-resources.xml” se debe
+                                            modificar un parámetro.</p>
+                                        <img src="../imagenes/semestre5/pasosGlassFish/paso3.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Se debe seleccionar en el apartado “value” copiar hasta el punto de Driver y
+                                            remplazar en el apartado de
+                                            “datasource-classname”<br><code>datasource-classname="com.mysql.cj.jdbc.MysqlDataSource"</code>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <!-- otro elemento -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        <h3>Configuración de arquitectura MVC</h3>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p style="text-align: justify;">En el apartado de “Source packages” se
+                                                    crea el modelo MVC que será la arquitectura del proyecto, en este
+                                                    apartado se crean los paquetes:</p>
+                                                <ul>
+                                                    <li>Controlador</li>
+                                                    <li>Modelo</li>
+                                                    <li>Entidades (tablas de la base de datos)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                        <p>Se inicia el mapeo de la base de datos, para crear un mapeo de todas las
+                                            tablas de la base de datos y que sean entidades persistentes, para ello clic
+                                            derecho en el paquete “Entidades”.</p>
+                                        <img src="../imagenes/semestre5/pasosMVC/paso2.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <div class="row mt-3">
+                                            <div class="col">
+                                                <ul>
+                                                    <li>El paquete necesario por lo general estará en la carpeta de
+                                                        persistencias, pero en este caso se puede filtrar</li>
+                                                    <li>Seleccionar carpeta de persistencias</li>
+                                                    <li>Tipo de archivo “Entity Classes from Database”</li>
+                                                    <li>Data source: “New Data Source”</li>
+                                                    <img src="../imagenes/semestre5/pasosMVC/paso3.png"
+                                                        class="rounded mx-auto d-block img-fluid">
+                                                    <li>Se escoge nombre del jndi y el conector va a ser el que ya se
+                                                        creó previamente</li>
+                                                    <img src="../imagenes/semestre5/pasosMVC/paso3.1.png"
+                                                        class="rounded mx-auto d-block img-fluid">
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso3.2.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                        <p>El programa nos traera todas las tablas que se encontraron en la base de
+                                            datos, ahora se selecciona “Add all” para que se agreguen todas las tablas
+                                            como entidades</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso4.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso4.1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                        <p>Las opciones preseleccionadas nos ayudarán en el proceso ya que las consultas
+                                            ya no se harán con sql si no jpql, y se manejara la persistencia de unidad
+                                        </p>
+                                        <img src="../imagenes/semestre5/pasosMVC/paso5.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p style="text-align: justify;">Se debe escoger el formato de asociación con la
+                                            base de datos en este caso se escoge “Lazy” debido a que no se estara
+                                            conectando todo el tiempo con la base de datos. En otro apartado en
+                                            “Collection” se colocar “java.util.List” para que nos traiga el formato en
+                                            lista todos los datos.<br>Las respuestas que se enviarán en HTTP se
+                                            mostrarán en formato xhtml o json.</p>
+                                        <img src="../imagenes/semestre5/pasosMVC/paso6.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <h4 class="mt-2">Mapeo en paquete modelo</h4>
+                                        <p>Similar al mapeo que se hizo anteriormente seria de esta manera, esto busca
+                                            generar el objeto con sus métodos los cuales serán los del CRUD.</p>
+                                        <img src="../imagenes/semestre5/pasosMVC/paso7.png"
+                                            class="rounded mx-auto d-block img-fluid">
+                                        <p>Nos muestra las entidades que se mapearon anteriormente y se deben agregar
+                                        </p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso8.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                            <div class="col">
+                                                <img src="../imagenes/semestre5/pasosMVC/paso8.1.png"
+                                                    class="rounded mx-auto d-block img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
 
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Documentación del proyecto</h3>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Guia de dearrollo de proyecto <a
+                                    href="../documentos/semestre5/guiaProyecto.pdf" download="Desarrollo_Proyecto"
+                                    class="btn btn-primary"><i class="bi bi-arrow-bar-down"></i></a></li>
+                            <li class="list-group-item">Herramientas informaticas <a
+                                    href="../documentos/semestre5/Herramientas informaticas.pdf"
+                                    download="Herramientas informaticas" class="btn btn-primary"><i
+                                        class="bi bi-arrow-bar-down"></i></a> </li>
+                            <li class="list-group-item">IEEE actualizdo <a href="../documentos/semestre5/IEEE.pdf"
+                                    download="IEEE" class="btn btn-primary"><i class="bi bi-arrow-bar-down"></i></a>
+                            </li>
+                        </ul>
+                    </blockquote>
                 </div>
             </div>
         </div>

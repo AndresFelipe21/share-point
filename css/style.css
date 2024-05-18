@@ -34,3 +34,7 @@ body {
     opacity: 1;
     filter: contrast(120%);
 }
+/*carta de 5 semestre*/
+.carta p,img{
+    text-align: center;
+}
